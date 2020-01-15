@@ -1,0 +1,240 @@
+{
+    "Falcon Resource": {
+        "prefix": "fResource",
+        "body": [
+            "class ${1:Falcon}${2:Resource}(${3:object}):",
+            "\tdef on_get(self, req, resp${4}):",
+            "\t\t${7:pass}",
+            "  ",
+            "\tdef on_get_${5:suffix}(self, req, resp${4}${6}):",
+            "\t\t${8:pass}",
+            "  ",
+            "\tdef on_post(self, req, resp${4}):",
+            "\t\t${9:pass}",
+            "  ",
+            "\tdef on_put_${5:suffix}(self, req, resp${4}${6}):",
+            "\t\t${10:pass}",
+            "  ",
+            "\tdef on_delete_${5:suffix}(self, req, resp${4}${6}):",
+            "\t\t${11:pass}",
+            ""
+        ],
+        "description": "Falcon Resource Template (get, get_id, post, put_id, delete_id)"
+    },
+    "Falcon Get Responder": {
+        "prefix": [
+            "fOnGetResponder",
+            "fGetResponder"
+        ],
+        "body": [
+            "def on_get(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_get(self, req, resp)"
+    },
+    "Falcon Get Suffix Responder": {
+        "prefix": [
+            "fOnGetWithSuffixResponder",
+            "fGetWithSuffixResponder"
+        ],
+        "body": [
+            "def on_get_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_get_{suffix(self, req, resp)"
+    },
+    "Falcon Head Responder": {
+        "prefix": [
+            "fOnHeadResponder",
+            "fHeadResponder"
+        ],
+        "body": [
+            "def on_head(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_head(self, req, resp)"
+    },
+    "Falcon Head Suffix Responder": {
+        "prefix": [
+            "fOnHeadWithSuffixResponder",
+            "fHeadWithSuffixResponder"
+        ],
+        "body": [
+            "def on_head_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_head_{suffix}(self, req, resp)"
+    },
+    "Falcon Post Responder": {
+        "prefix": [
+            "fOnPostResponder",
+            "fPostResponder"
+        ],
+        "body": [
+            "def on_post(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_post(self, req, resp)"
+    },
+    "Falcon Post Suffix Responder": {
+        "prefix": [
+            "fOnPostWithSuffixResponder",
+            "fPostWithSuffixResponder"
+        ],
+        "body": [
+            "def on_post_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_post_{suffix}(self, req, resp)"
+    },
+    "Falcon Put Responder": {
+        "prefix": [
+            "fOnPutResponder",
+            "fPutResponder"
+        ],
+        "body": [
+            "def on_put(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_put(self, req, resp)"
+    },
+    "Falcon Put Suffix Responder": {
+        "prefix": [
+            "fOnPutWithSuffixResponder",
+            "fPutWithSuffixResponder"
+        ],
+        "body": [
+            "def on_put_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_put_{suffix}(self, req, resp)"
+    },
+    "Falcon Delete Responder": {
+        "prefix": [
+            "fOnDeleteResponder",
+            "fDeleteResponder"
+        ],
+        "body": [
+            "def on_delete(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_delete(self, req, resp)"
+    },
+    "Falcon Delete Suffix Responder": {
+        "prefix": [
+            "fOnDeleteWithSuffixResponder",
+            "fDeleteWithSuffixResponder"
+        ],
+        "body": [
+            "def on_delete_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_delete_{suffix}(self, req, resp)"
+    },
+    "Falcon Connect Responder": {
+        "prefix": [
+            "fOnConnectResponder",
+            "fConnectResponder"
+        ],
+        "body": [
+            "def on_connect(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_connect(self, req, resp)"
+    },
+    "Falcon Connect Suffix Responder": {
+        "prefix": [
+            "fOnConnectWithSuffixResponder",
+            "fConnectWithSuffixResponder"
+        ],
+        "body": [
+            "def on_connect_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_connect_{suffix}(self, req, resp)"
+    },
+    "Falcon Options Responder": {
+        "prefix": [
+            "fOnOptionsResponder",
+            "fOptionsResponder"
+        ],
+        "body": [
+            "def on_options(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_options(self, req, resp)"
+    },
+    "Falcon Options Suffix Responder": {
+        "prefix": [
+            "fOnOptionsWithSuffixResponder",
+            "fOptionsWithSuffixResponder"
+        ],
+        "body": [
+            "def on_options_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_options_{suffix}(self, req, resp)"
+    },
+    "Falcon Trace Responder": {
+        "prefix": [
+            "fOnTraceResponder",
+            "fTraceResponder"
+        ],
+        "body": [
+            "def on_trace(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_trace(self, req, resp)"
+    },
+    "Falcon Trace Suffix Responder": {
+        "prefix": [
+            "fOnTraceWithSuffixResponder",
+            "fTraceWithSuffixResponder"
+        ],
+        "body": [
+            "def on_trace_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_trace_{suffix}(self, req, resp)"
+    },
+    "Falcon Patch Responder": {
+        "prefix": [
+            "fOnPatchResponder",
+            "fPatchResponder"
+        ],
+        "body": [
+            "def on_trace(self, req, resp${1}):",
+            "\t${2:pass}",
+            ""
+        ],
+        "description": "def on_patch(self, req, resp)"
+    },
+    "Falcon Patch Suffix Responder": {
+        "prefix": [
+            "fOnPatchWithSuffixResponder",
+            "fPatchWithSuffixResponder"
+        ],
+        "body": [
+            "def on_patch_${1:suffix}(self, req, resp${2}):",
+            "\t${3:pass}",
+            ""
+        ],
+        "description": "def on_patch_{suffix}(self, req, resp)"
+    }
+}

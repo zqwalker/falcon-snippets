@@ -1,0 +1,21 @@
+{
+    "name": "falcon-snippets",
+    "displayName": "Falcon Snippets",
+    "description": "Snippets for the Python Falcon Framework",
+    "publisher": "zqwalker",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/resources.json"
+            }
+        ]
+    }
+}
