@@ -2,6 +2,7 @@
 
 Snippets for the Python Framework Falcon
 
+![](demo.gif)
 
 ## Features
 
