@@ -1,0 +1,17 @@
+{
+    "New Route": {
+        "prefix": "fNewRoute",
+        "body": [
+            "${1:example} = ${2:Example}${3:Resource}()",
+            "app.add_route('/${4:URI}', ${1:example})"
+        ],
+        "description": "Add Resource Ref and Route"
+    },
+    "Add Route": {
+        "prefix": "fAddRoute",
+        "body": [
+            "app.add_route('/${1:URI}', ${2:param})"
+        ],
+        "description": "app.add_route"
+    }
+}

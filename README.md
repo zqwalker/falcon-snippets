@@ -4,7 +4,9 @@ Snippets for the Python Framework Falcon.
 
 ![](demo.gif)
 
-# Falcon Resource Snippets
+
+
+Resources Snippets
 
 | Description              | Prefix                        | Example                  |
 |--------------------------|-------------------------------|--------------------------|
@@ -27,3 +29,18 @@ Snippets for the Python Framework Falcon.
 | Trace Suffix Responder   | fOnTraceWithSuffixResponder   | def on_trace_{suffix}    |
 | Patch Responder          | fOnPatchResponder             | def on_patch             |
 | Patch Suffix Responder   | fOnPatchWithSuffixResponder   | def on_patch_{suffix}    |
+
+
+Routing Snippets
+
+| Description   | Prefix    | Example                    |
+|---------------|-----------|----------------------------|
+| New Route     | fNewRoute | Add Resource Ref and Route |
+| Add Route     | fAddRoute | app.add_route              |
+
+
+Example Snippets
+
+| Description         | Prefix      | Example             |
+|---------------------|-------------|---------------------|
+| Quick Start Example | fExampleApp | Quick Start Example |

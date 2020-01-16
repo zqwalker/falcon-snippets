@@ -25,11 +25,16 @@
         "snippets": [
             {
                 "language": "python",
+                "path": "./snippets/example.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/resources.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/routing.json"
             }
         ]
-    },
-    "activationEvents": [
-        "onLanguage:python"
-    ]
+    }
 }
