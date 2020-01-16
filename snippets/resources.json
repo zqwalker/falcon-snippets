@@ -1,5 +1,5 @@
 {
-    "Falcon Resource": {
+    "Resource Template": {
         "prefix": "fResource",
         "body": [
             "class ${1:Falcon}${2:Resource}(${3:object}):",
@@ -19,9 +19,9 @@
             "\t\t${11:pass}",
             ""
         ],
-        "description": "Falcon Resource Template (get, get_id, post, put_id, delete_id)"
+        "description": "Falcon Resource Template"
     },
-    "Falcon Get Responder": {
+    "Get Responder": {
         "prefix": [
             "fOnGetResponder",
             "fGetResponder"
@@ -31,9 +31,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_get(self, req, resp)"
+        "description": "def on_get"
     },
-    "Falcon Get Suffix Responder": {
+    "Get Suffix Responder": {
         "prefix": [
             "fOnGetWithSuffixResponder",
             "fGetWithSuffixResponder"
@@ -43,9 +43,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_get_{suffix(self, req, resp)"
+        "description": "def on_get_{suffix}"
     },
-    "Falcon Head Responder": {
+    "Head Responder": {
         "prefix": [
             "fOnHeadResponder",
             "fHeadResponder"
@@ -55,9 +55,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_head(self, req, resp)"
+        "description": "def on_head"
     },
-    "Falcon Head Suffix Responder": {
+    "Head Suffix Responder": {
         "prefix": [
             "fOnHeadWithSuffixResponder",
             "fHeadWithSuffixResponder"
@@ -67,9 +67,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_head_{suffix}(self, req, resp)"
+        "description": "def on_head_{suffix}"
     },
-    "Falcon Post Responder": {
+    "Post Responder": {
         "prefix": [
             "fOnPostResponder",
             "fPostResponder"
@@ -79,9 +79,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_post(self, req, resp)"
+        "description": "def on_post"
     },
-    "Falcon Post Suffix Responder": {
+    "Post Suffix Responder": {
         "prefix": [
             "fOnPostWithSuffixResponder",
             "fPostWithSuffixResponder"
@@ -91,9 +91,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_post_{suffix}(self, req, resp)"
+        "description": "def on_post_{suffix}"
     },
-    "Falcon Put Responder": {
+    "Put Responder": {
         "prefix": [
             "fOnPutResponder",
             "fPutResponder"
@@ -103,9 +103,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_put(self, req, resp)"
+        "description": "def on_put"
     },
-    "Falcon Put Suffix Responder": {
+    "Put Suffix Responder": {
         "prefix": [
             "fOnPutWithSuffixResponder",
             "fPutWithSuffixResponder"
@@ -115,9 +115,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_put_{suffix}(self, req, resp)"
+        "description": "def on_put_{suffix}"
     },
-    "Falcon Delete Responder": {
+    "Delete Responder": {
         "prefix": [
             "fOnDeleteResponder",
             "fDeleteResponder"
@@ -127,9 +127,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_delete(self, req, resp)"
+        "description": "def on_delete"
     },
-    "Falcon Delete Suffix Responder": {
+    "Delete Suffix Responder": {
         "prefix": [
             "fOnDeleteWithSuffixResponder",
             "fDeleteWithSuffixResponder"
@@ -139,9 +139,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_delete_{suffix}(self, req, resp)"
+        "description": "def on_delete_{suffix}"
     },
-    "Falcon Connect Responder": {
+    "Connect Responder": {
         "prefix": [
             "fOnConnectResponder",
             "fConnectResponder"
@@ -151,9 +151,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_connect(self, req, resp)"
+        "description": "def on_connect"
     },
-    "Falcon Connect Suffix Responder": {
+    "Connect Suffix Responder": {
         "prefix": [
             "fOnConnectWithSuffixResponder",
             "fConnectWithSuffixResponder"
@@ -163,9 +163,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_connect_{suffix}(self, req, resp)"
+        "description": "def on_connect_{suffix}"
     },
-    "Falcon Options Responder": {
+    "Options Responder": {
         "prefix": [
             "fOnOptionsResponder",
             "fOptionsResponder"
@@ -175,9 +175,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_options(self, req, resp)"
+        "description": "def on_options"
     },
-    "Falcon Options Suffix Responder": {
+    "Options Suffix Responder": {
         "prefix": [
             "fOnOptionsWithSuffixResponder",
             "fOptionsWithSuffixResponder"
@@ -187,9 +187,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_options_{suffix}(self, req, resp)"
+        "description": "def on_options_{suffix}"
     },
-    "Falcon Trace Responder": {
+    "Trace Responder": {
         "prefix": [
             "fOnTraceResponder",
             "fTraceResponder"
@@ -199,9 +199,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_trace(self, req, resp)"
+        "description": "def on_trace"
     },
-    "Falcon Trace Suffix Responder": {
+    "Trace Suffix Responder": {
         "prefix": [
             "fOnTraceWithSuffixResponder",
             "fTraceWithSuffixResponder"
@@ -211,9 +211,9 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_trace_{suffix}(self, req, resp)"
+        "description": "def on_trace_{suffix}"
     },
-    "Falcon Patch Responder": {
+    "Patch Responder": {
         "prefix": [
             "fOnPatchResponder",
             "fPatchResponder"
@@ -223,9 +223,9 @@
             "\t${2:pass}",
             ""
         ],
-        "description": "def on_patch(self, req, resp)"
+        "description": "def on_patch"
     },
-    "Falcon Patch Suffix Responder": {
+    "Patch Suffix Responder": {
         "prefix": [
             "fOnPatchWithSuffixResponder",
             "fPatchWithSuffixResponder"
@@ -235,6 +235,6 @@
             "\t${3:pass}",
             ""
         ],
-        "description": "def on_patch_{suffix}(self, req, resp)"
+        "description": "def on_patch_{suffix}"
     }
 }

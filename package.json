@@ -3,9 +3,16 @@
     "displayName": "Falcon Snippets",
     "description": "Snippets for the Python Falcon Framework",
     "publisher": "zqwalker",
+    "keywords": ["Falcon", "Python", "Snippets", "Shortcuts"],
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.41.0"
+    },
+    "license": "SEE LICENSE IN LICENSE FILE",
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#232323",
+        "theme": "dark"
     },
     "categories": [
         "Snippets"
@@ -21,5 +28,8 @@
                 "path": "./snippets/resources.json"
             }
         ]
-    }
+    },
+    "activationEvents": [
+        "onLanguage:python"
+    ]
 }
