@@ -1,0 +1,81 @@
+{
+  "Middleware Template": {
+    "prefix": "fMiddleware",
+    "body": [
+      "class ${1:ExampleMiddleware}(${2:object}):",
+      "\tdef process_request(self, req, resp):",
+      "\t\t\"\"\"Process the request before routing it.",
+      "",
+      "\t\t\tNote:",
+      "\t\t\t\tBecause Falcon routes each request based on req.path, a",
+      "\t\t\t\trequest can be effectively re-routed by setting that",
+      "\t\t\t\tattribute to a new value from within process_request().",
+      "",
+      "\t\t\tArgs:",
+      "\t\t\t\treq: Request object that will eventually be",
+      "\t\t\t\t\trouted to an on_* responder method.",
+      "\t\t\t\tresp: Response object that will be routed to",
+      "\t\t\t\t\tthe on_* responder.",
+      "\t\t\t\"\"\"",
+      "",
+      "\tdef process_resource(self, req, resp, resource, params):",
+      "\t\t\"\"\"Process the request after routing.",
+      "",
+      "\t\t\tNote:",
+      "\t\t\t\tThis method is only called when the request matches",
+      "\t\t\t\ta route to a resource.",
+      "",
+      "\t\t\tArgs:",
+      "\t\t\t\treq: Request object that will be passed to the",
+      "\t\t\t\t\trouted responder.",
+      "\t\t\t\tresp: Response object that will be passed to the",
+      "\t\t\t\t\tresponder.",
+      "\t\t\t\tresource: Resource object to which the request was",
+      "\t\t\t\t\trouted.",
+      "\t\t\t\tparams: A dict-like object representing any additional",
+      "\t\t\t\t\tparams derived from the route's URI template fields,",
+      "\t\t\t\t\tthat will be passed to the resource's responder",
+      "\t\t\t\t\tmethod as keyword arguments.",
+      "\t\t\t\"\"\"",
+      "",
+      "\tdef process_response(self, req, resp, resource, req_succeeded):",
+      "\t\t\"\"\"\"Post-processing of the response (after routing).",
+      "",
+      "\t\t\tArgs:",
+      "\t\t\t\t\treq: Request object.",
+      "\t\t\t\t\tresp: Response object.",
+      "\t\t\t\t\tresource: Resource object to which the request was",
+      "\t\t\t\t\t\trouted. May be None if no route was found",
+      "\t\t\t\t\t\tfor the request.",
+      "\t\t\t\t\treq_succeeded: True if no exceptions were raised while",
+      "\t\t\t\t\t\tthe framework processed and routed the request;",
+      "\t\t\t\t\t\totherwise False.",
+      "\t\t\t\"\"\""
+    ],
+    "description": "Falcon Middleware Template"
+  },
+  "Process Request": {
+    "prefix": "fProcessRequest",
+    "body": [
+      "def process_request(self, req, resp${1}):",
+      "\t${2:pass}"
+    ],
+    "description": "def process_request"
+  },
+  "Process Resource": {
+    "prefix": "fProcessResource",
+    "body": [
+      "def process_resource(self, req, resp${1}):",
+      "\t${2:pass}"
+    ],
+    "description": "def process_resource"
+  },
+  "Process Response": {
+    "prefix": "fProcessResponse",
+    "body": [
+      "def process_response(self, req, resp${1}):",
+      "\t${2:pass}"
+    ],
+    "description": "def process_response"
+  }
+}

@@ -4,7 +4,7 @@
     "description": "Snippets for the Python Falcon Framework",
     "publisher": "zqwalker",
     "keywords": ["Falcon", "Python", "Snippets", "Shortcuts"],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.41.0"
     },
@@ -34,6 +34,10 @@
             {
                 "language": "python",
                 "path": "./snippets/routing.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/middleware.json"
             }
         ]
     }

@@ -39,6 +39,16 @@ Routing Snippets
 | Add Route     | fAddRoute | app.add_route              |
 
 
+Middleware Snippets
+
+| Description             | Prefix           | Example                      |
+|-------------------------|------------------|------------------------------|
+| Middleware Template     | fMiddleware      | Falcon Middleware Template   |
+| Process Request         | fProcessRequest  | def process_resource         |
+| Process Resource        | fProcessResource | def process_request          |
+| Process Response        | fProcessResponse | def process_response         |
+
+
 Example Snippets
 
 | Description         | Prefix      | Example             |
